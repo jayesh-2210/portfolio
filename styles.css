@@ -491,6 +491,66 @@ a {
 }
 
 /* ============================================
+   HERO PROFILE IMAGE
+   ============================================ */
+.hero-image-wrapper {
+  flex: 0 0 auto;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  z-index: 2;
+  box-shadow:
+    0 0 0 4px rgba(43, 163, 182, 0.6),
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(43, 163, 182, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image-wrapper:hover .hero-profile-img {
+  transform: scale(1.04);
+  box-shadow:
+    0 0 0 4px rgba(43, 163, 182, 0.9),
+    0 25px 70px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(43, 163, 182, 0.35);
+}
+
+.hero-image-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(43, 163, 182, 0.35);
+  animation: ring-pulse 3s ease-in-out infinite;
+  z-index: 1;
+  width: 310px;
+  height: 310px;
+}
+
+.hero-image-ring-2 {
+  width: 340px;
+  height: 340px;
+  border-color: rgba(212, 168, 67, 0.2);
+  animation-delay: 1.5s;
+}
+
+@keyframes ring-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.04); opacity: 1; }
+}
+
+/* ============================================
    SECTION HEADINGS
    ============================================ */
 .section-heading {
