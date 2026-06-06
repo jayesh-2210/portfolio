@@ -303,17 +303,17 @@ a {
   width: 100%;
   z-index: 1000;
   transition: all var(--transition);
-  padding: 1.2rem 0;
-  background: rgba(10, 22, 40, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  padding: 1.5rem 0;
+  background: transparent;
 }
 
 .navbar.scrolled {
   padding: 0.8rem 0;
-  background: rgba(10, 22, 40, 0.95);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid var(--border-glass);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-container {
