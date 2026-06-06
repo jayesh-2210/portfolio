@@ -1239,6 +1239,27 @@ footer {
   .section-heading {
     font-size: 2.2rem;
   }
+
+  /* iPad: shrink profile image to fit side-by-side */
+  .hero-image-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-profile-img {
+    width: 210px;
+    height: 210px;
+  }
+
+  .hero-image-ring {
+    width: 228px;
+    height: 228px;
+  }
+
+  .hero-image-ring-2 {
+    width: 252px;
+    height: 252px;
+  }
 }
 
 /* ============================================
@@ -1252,10 +1273,32 @@ footer {
   .hero-title { font-size: 2.8rem; }
   .hero-subtitle { font-size: 1.1rem; }
 
-  .flex-row { flex-direction: column-reverse; text-align: center; gap: 2rem; margin-top: 4rem; }
+  .flex-row { flex-direction: column; text-align: center; gap: 2rem; margin-top: 4rem; }
   .hero-text { text-align: center; }
   .hero-desc { margin: 0 auto 2.5rem; }
   .tags { justify-content: center; }
+
+  /* Mobile: center profile image above text */
+  .hero-image-wrapper {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .hero-profile-img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero-image-ring {
+    width: 206px;
+    height: 206px;
+  }
+
+  .hero-image-ring-2 {
+    width: 228px;
+    height: 228px;
+  }
 
   .hero-cta { flex-direction: column; align-items: center; }
 
@@ -1374,6 +1417,27 @@ footer {
   
   .hero-title {
     font-size: 2.4rem;
+  }
+
+  /* Small phones: compact profile image */
+  .hero-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-profile-img {
+    width: 155px;
+    height: 155px;
+  }
+
+  .hero-image-ring {
+    width: 168px;
+    height: 168px;
+  }
+
+  .hero-image-ring-2 {
+    width: 186px;
+    height: 186px;
   }
   
   .comparison-card {
