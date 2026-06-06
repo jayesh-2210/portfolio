@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jayesh Gupta - AI Java Software Developer. Experienced in Java, Spring Boot, Microservices, and PostgreSQL.">
-    <title>Jayesh Gupta | Software Developer</title>
+    <meta name="description" content="Jayesh Gupta — Forward Deployed Engineer | Gen AI Backend Developer | Spring AI | Spring Boot | Microservices | Java 21 | PostgreSQL | Building High-Scale APIs & Distributed Systems.">
+    <title>Jayesh Gupta | Forward Deployed Engineer | Gen AI Backend Developer</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            <span class="preloader-text">JG<span class="accent">.</span></span>
+        </div>
+        <div class="preloader-progress-container">
+            <div class="preloader-progress-bar" id="preloaderBar"></div>
+        </div>
+        <div class="preloader-percentage" id="preloaderPercent">0%</div>
+    </div>
+
     <div class="background-effects">
         <div class="glow glow-1"></div>
         <div class="glow glow-2"></div>
@@ -42,11 +54,11 @@
         <section id="home" class="hero section-padding">
             <div class="container hero-content flex-row hidden">
                 <div class="hero-text">
-                    <p class="subtitle">Hi, my name is</p>
+                    <p class="subtitle">Forward Deployed Engineer</p>
                     <h1 class="hero-title">Jayesh Gupta<span class="dot">.</span></h1>
-                    <h2 class="hero-subtitle">Building High-Scale APIs & Distributed Systems.</h2>
+                    <h2 class="hero-subtitle">Gen AI Backend Developer — shipping production code at the frontline. Building high-scale APIs, distributed systems, and multi-country integrations.</h2>
                     <p class="hero-desc">
-                        An <strong>AI Java Software Developer</strong> currently shipping backend systems — from payment gateway integrations to real-time webhooks — using <strong>Java 21, Spring Boot, and PostgreSQL</strong>.
+                        A <strong>Forward Deployed Engineer</strong> who doesn't just write code — I deploy it where it matters. From architecting payment gateways in Kenya to building real-time webhooks and upgrading microservices to <strong>Java 21 & Spring Boot 3.2</strong>, I operate at the intersection of engineering and business delivery. Give me a complex problem and I'll figure it out.
                     </p>
                     <div class="hero-cta">
                         <a href="#experience" class="btn-primary">View My Work</a>
@@ -56,34 +68,68 @@
             </div>
         </section>
 
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item hidden" style="--delay: 1">
+                        <div class="stat-value" data-target="3" data-suffix="+">0</div>
+                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-desc">Shipping production code</div>
+                    </div>
+                    <div class="stat-item hidden" style="--delay: 2">
+                        <div class="stat-value" data-target="500" data-suffix="+">0</div>
+                        <div class="stat-label">Problems Solved</div>
+                        <div class="stat-desc">LeetCode & GeeksforGeeks</div>
+                    </div>
+                    <div class="stat-item hidden" style="--delay: 3">
+                        <div class="stat-value" data-target="84" data-suffix="%">0</div>
+                        <div class="stat-label">Test Coverage</div>
+                        <div class="stat-desc">Achieved from 23%</div>
+                    </div>
+                    <div class="stat-item hidden" style="--delay: 4">
+                        <div class="stat-value" data-target="5" data-suffix="+">0</div>
+                        <div class="stat-label">Payment Integrations</div>
+                        <div class="stat-desc">Stripe, MPESA & more</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- About & Skills Section -->
         <section id="skills" class="skills section-padding">
             <div class="container">
-                <h2 class="section-heading hidden" id="about">About & <span class="highlight">Skills</span></h2>
-                
+                <div class="section-header hidden" id="about">
+                    <h2 class="section-heading">About & <span class="highlight">Skills</span></h2>
+                    <p class="section-subtitle">A backend engineer who thrives at the intersection of deep technical execution and business impact.</p>
+                </div>
+
                 <div class="skills-grid">
                     <div class="skill-category glass-card hidden" style="--delay: 1">
+                        <div class="skill-icon">📋</div>
                         <h3>Summary</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">
-                            I'm a backend engineer who genuinely enjoys what I build. I graduated in Computer Science from NIT Arunachal Pradesh, where coding started as a hobby and slowly became a career. I've upgraded production microservices, built CI/CD pipelines, taken code coverage from 23% to 84%, and integrated multi-country tax and payment systems. Currently open to Senior Backend / Java / Spring Boot engineering roles where I can take ownership and build at scale.
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; text-align: left;">
+                            I'm a backend engineer who genuinely enjoys what I build. Graduated in Computer Science from NIT Arunachal Pradesh, where coding started as a hobby and slowly became a career. That curiosity never left — I've solved 500+ problems on LeetCode & GeeksforGeeks, and I still get excited about a well-designed system. I've upgraded production microservices, built CI/CD pipelines, taken code coverage from 23% to 84%, and integrated multi-country tax & payment systems. Outside of work — badminton, keyboard, music, and exploring new places keep me balanced.
                         </p>
                     </div>
 
                     <div class="skill-category glass-card hidden" style="--delay: 2">
-                        <h3>Top Skills & Focus</h3>
+                        <div class="skill-icon">⚡</div>
+                        <h3>Core Engineering</h3>
                         <div class="tags">
-                            <span class="tag">IT Integration</span>
-                            <span class="tag">Systems Design</span>
-                            <span class="tag">Low-Level Design</span>
                             <span class="tag">Java 21</span>
-                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Spring Boot 3.2</span>
                             <span class="tag">Microservices</span>
                             <span class="tag">PostgreSQL</span>
                             <span class="tag">Spring AI</span>
+                            <span class="tag">Systems Design</span>
+                            <span class="tag">Low-Level Design</span>
+                            <span class="tag">IT Integration</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category glass-card hidden" style="--delay: 3">
+                        <div class="skill-icon">☁️</div>
                         <h3>Frontend & Cloud</h3>
                         <div class="tags">
                             <span class="tag">React.js</span>
@@ -96,13 +142,55 @@
                     </div>
 
                     <div class="skill-category glass-card hidden" style="--delay: 4">
+                        <div class="skill-icon">🏅</div>
                         <h3>Certifications</h3>
                         <div class="tags">
                             <span class="tag">AWS Cloud Practitioner</span>
                             <span class="tag">Google Hash Code 2021</span>
                             <span class="tag">Machine Learning</span>
                             <span class="tag">Blockchain Basics</span>
+                            <span class="tag">Android Studio with Java</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Bring — Problem / Solution -->
+        <section class="what-i-bring section-padding">
+            <div class="container">
+                <div class="section-header hidden">
+                    <h2 class="section-heading">What I <span class="highlight">Bring</span></h2>
+                    <p class="section-subtitle">I don't just fill a role — I solve the problems that slow your engineering team down.</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div class="comparison-card problem hidden" style="--delay: 1">
+                        <div class="comparison-card-header">
+                            <h3>Common Challenges</h3>
+                            <span class="comparison-icon">🚧</span>
+                        </div>
+                        <ul class="comparison-list">
+                            <li>Engineers who only code, never deploy</li>
+                            <li>Microservices stuck on legacy frameworks</li>
+                            <li>Flaky test suites nobody trusts</li>
+                            <li>Payment integrations that take months</li>
+                            <li>No ownership beyond the PR merge</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-card solution hidden" style="--delay: 2">
+                        <div class="comparison-card-header">
+                            <h3>What I Deliver</h3>
+                            <span class="comparison-icon">🚀</span>
+                        </div>
+                        <ul class="comparison-list">
+                            <li>Full-cycle: design → build → deploy → monitor</li>
+                            <li>Upgraded to Java 21 & Spring Boot 3.2</li>
+                            <li>Took test coverage from 23% to 84%</li>
+                            <li>Stripe + MPESA integrated in weeks</li>
+                            <li>I own what I ship — end to end</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -111,23 +199,32 @@
         <!-- Experience Section -->
         <section id="experience" class="experience section-padding">
             <div class="container">
-                <h2 class="section-heading hidden">Work <span class="highlight">Experience</span></h2>
-                
+                <div class="section-header hidden">
+                    <h2 class="section-heading">Work <span class="highlight">Experience</span></h2>
+                    <p class="section-subtitle">3+ years of shipping production systems — from payment gateways to enterprise microservices.</p>
+                </div>
+
                 <div class="timeline">
-                    <!-- Garageplug -->
+                    <!-- GaragePlug -->
                     <div class="timeline-item hidden">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card hover-glow">
-                            <span class="timeline-date">Jun 2023 – Present</span>
-                            <h3 class="timeline-title">AI Software Developer</h3>
+                            <span class="timeline-date">Jun 2023 – Present · 3 yrs+</span>
+                            <h3 class="timeline-title">Gen AI Backend Developer</h3>
                             <h4 class="timeline-company">GaragePlug — Bengaluru, India</h4>
                             <ul class="timeline-details">
-                                <li>Designed and architected components for the backend system including authentication, OMS, and CRM.</li>
-                                <li>Developed architecture changes for tagging master, customer master, vendor master, tax master, and reports.</li>
-                                <li>Implemented real-time Webhooks for event-driven push notifications across services.</li>
-                                <li>Designed Unit Of Measure Module covering inventory, POs, repair orders, invoices, and credit notes.</li>
-                                <li>Integrated Stripe Online & POS Terminal and MPESA (Kenya) payment gateways.</li>
-                                <li>Upgraded Spring Boot (3.2.5) and Java (21) version for the Order Management Microservice.</li>
+                                <li>Architected and deployed core backend modules — authentication, OMS, CRM — directly into production at an early-stage startup digitizing the auto-services industry.</li>
+                                <li>Designed and developed architecture changes: tagging master, customer master, vendor master, tax master, user management, expense head master, and reports.</li>
+                                <li>Designed and shipped real-time Webhooks — push notifications across services triggered on events like new order creation.</li>
+                                <li>Built the Unit of Measure module spanning part master, inventory, purchase orders, repair orders, invoices, counter sales, credit notes, and purchase returns.</li>
+                                <li>Implemented part search and inventory search across all branches (HO Management).</li>
+                                <li>Built inspection checkpoints system — defining mandatory vs non-mandatory items, and handling rejected service/parts from inspection during repair order creation.</li>
+                                <li>Implemented India-specific tax features: CGST, SGST, IGST compliance across all invoicing flows.</li>
+                                <li>Delivered performance fixes: database query optimization, customer query optimization across high-traffic endpoints.</li>
+                                <li>Designed and developed Stripe (Online + POS Terminal) and MPESA (Kenya) payment gateway integrations based on Checkout Session architecture.</li>
+                                <li>Implemented advance payment posting via Webhook in SAP integration.</li>
+                                <li>Built Partial StockIn feature and bulk voucher generation based on configurable conditions.</li>
+                                <li>Upgraded the Order Management Microservice to Spring Boot 3.2.5 and Java 21.</li>
                             </ul>
                         </div>
                     </div>
@@ -140,10 +237,12 @@
                             <h3 class="timeline-title">Associate Software Engineer | Product Development</h3>
                             <h4 class="timeline-company">RoboMQ — Jaipur, India</h4>
                             <ul class="timeline-details">
-                                <li>Backend developer for iPAAS and Hire2Retire products using Java Spring Framework.</li>
-                                <li>Elevated code coverage from 23% to 84% by authoring comprehensive JUnit5 tests.</li>
-                                <li>Created Jenkins build pipelines for microservices (CI/CD) and managed AWS ECR image updates.</li>
-                                <li>Conducted thorough end-to-end testing for JiraSoftware and JiraServiceManagement microservices.</li>
+                                <li>Backend developer for Connect iPAAS and Hire2Retire enterprise products using Java Spring Framework.</li>
+                                <li>Authored comprehensive JUnit5 tests for ITSM Jira Connector, Transformer, and PIPAzureAD Connector — elevating code coverage from 23% to 84%.</li>
+                                <li>Built Jenkins CI/CD pipelines for microservices, enabling continuous integration and deployment.</li>
+                                <li>Managed image updates and pushed them to AWS ECR repository for seamless deployment.</li>
+                                <li>Conducted thorough end-to-end testing for JiraSoftware, JiraWorkManagement, and JiraServiceManagement microservices.</li>
+                                <li>Utilized SonarLint for rigorous code quality reviews and proactive bug fixes.</li>
                             </ul>
                         </div>
                     </div>
@@ -152,12 +251,40 @@
                     <div class="timeline-item hidden">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card hover-glow">
-                            <span class="timeline-date">Mar 2022 – May 2022</span>
+                            <span class="timeline-date">Mar 2022 – May 2022 · 3 mos</span>
                             <h3 class="timeline-title">Associate Software Engineer Intern</h3>
                             <h4 class="timeline-company">IndiaMART InterMESH Limited — Noida, India</h4>
                             <ul class="timeline-details">
-                                <li>Worked collaboratively with the DBA Team on PostgreSQL technologies.</li>
-                                <li>Received training spanning Google SEO, SQL, ReactJS, NodeJS, and Scrum.</li>
+                                <li>Collaborated with the DBA Team on PostgreSQL technologies, performance tuning, and query optimization.</li>
+                                <li>Received cross-functional training spanning Google SEO, SQL, ReactJS, NodeJS, HTML, CSS, Linux, and Scrum.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CleverTap -->
+                    <div class="timeline-item hidden">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">Jan 2022 – Mar 2022 · 3 mos</span>
+                            <h3 class="timeline-title">DevOps Intern</h3>
+                            <h4 class="timeline-company">CleverTap — Mumbai, India</h4>
+                            <ul class="timeline-details">
+                                <li>Gained hands-on experience with DevOps practices, CI/CD workflows, and cloud infrastructure management.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Virtual Programs -->
+                    <div class="timeline-item hidden">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="timeline-date">2021</span>
+                            <h3 class="timeline-title">Virtual Experience Programs</h3>
+                            <h4 class="timeline-company">Deloitte · JPMorgan Chase · The Sparks Foundation</h4>
+                            <ul class="timeline-details">
+                                <li><strong>Deloitte</strong> — STEM Connect Virtual Experience Program (Sep – Oct 2021).</li>
+                                <li><strong>JPMorgan Chase</strong> — Software Engineering Virtual Program (May – Jun 2021).</li>
+                                <li><strong>The Sparks Foundation</strong> — Data Science & Business Analytics Internship: supervised & unsupervised ML prediction tasks (Jul 2021).</li>
                             </ul>
                         </div>
                     </div>
@@ -168,8 +295,11 @@
         <!-- Projects Section -->
         <section id="projects" class="projects section-padding">
             <div class="container">
-                <h2 class="section-heading hidden">Featured <span class="highlight">Projects</span></h2>
-                
+                <div class="section-header hidden">
+                    <h2 class="section-heading">Featured <span class="highlight">Projects</span></h2>
+                    <p class="section-subtitle">Side projects where I explore new technologies and push beyond the day job.</p>
+                </div>
+
                 <div class="slider-wrapper">
                     <button class="slider-btn prev-btn" aria-label="Previous Projects">&lt;</button>
                     <div class="slider-container">
@@ -322,15 +452,19 @@
                         </li>
                         <li class="glass-card hover-glow">
                             <div class="icon">🏆</div>
-                            <p><strong>National Cadet Corps (NCC)</strong> Cadet (Aug 2018 - Jul 2022)</p>
+                            <p><strong>National Cadet Corps (NCC)</strong> Cadet — NIT Arunachal Pradesh (Aug 2018 - Jul 2022, 4 years)</p>
                         </li>
                         <li class="glass-card hover-glow">
                             <div class="icon">👔</div>
-                            <p><strong>Training & Placement Cell Student Coordinator</strong> at NIT AP</p>
+                            <p><strong>Training & Placement Cell Student Coordinator</strong> at NIT AP (Jul 2021 – Jun 2022)</p>
+                        </li>
+                        <li class="glass-card hover-glow">
+                            <div class="icon">🏦</div>
+                            <p><strong>JPMorgan Chase & Deloitte</strong> — Virtual Experience Programs in Software Engineering & STEM</p>
                         </li>
                     </ul>
                 </div>
-                
+
                 <div class="education-section hidden">
                     <h2 class="section-heading">Education</h2>
                     <div class="timeline">
@@ -355,9 +489,18 @@
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content glass-card hover-glow">
-                                <h3 class="timeline-title">Class XII (97.60%)</h3>
-                                <h4 class="timeline-company">Govt. Senior Secondary School, Bakani</h4>
-                                <span class="timeline-date block mt-1">Jun 2016 – May 2017</span>
+                                <h3 class="timeline-title">Class XII — 97.60% (Rajasthan Board)</h3>
+                                <h4 class="timeline-company">Govt. Senior Secondary School, Bakani, Jhalawar</h4>
+                                <span class="timeline-date block mt-1">2016 – 2017</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card hover-glow">
+                                <h3 class="timeline-title">Class X — 94% (Rajasthan Board)</h3>
+                                <h4 class="timeline-company">Swami Shree Rameshwar Asharam Adarsh Vidya Mandir, Bakani, Jhalawar</h4>
+                                <span class="timeline-date block mt-1">2014 – 2015</span>
                             </div>
                         </div>
                     </div>
@@ -368,31 +511,62 @@
         <!-- Contact Section -->
         <section id="contact" class="contact section-padding text-center">
             <div class="container hidden">
-                <h2 class="section-heading">Get In <span class="highlight">Touch</span></h2>
-                <p class="contact-desc">
-                    I'm currently looking for Senior Backend / Java / Spring Boot engineering roles where I can take ownership and build at scale. Whether you have a question or just want to explore opportunities, I'll try my best to get back to you!
-                </p>
-                <div class="contact-links" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="mailto:jayeshcse18.22@gmail.com" class="btn-primary">Email Me</a>
-                    <a href="https://www.linkedin.com/in/jayeshgupta-904347194" target="_blank" class="btn-secondary">LinkedIn Profile</a>
+                <div class="section-header">
+                    <h2 class="section-heading">Get In <span class="highlight">Touch</span></h2>
+                    <p class="section-subtitle">I'm open to Forward Deployed, Senior Backend, and full-stack engineering roles where I can own delivery end-to-end.</p>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-desc">
+                        Whether you need an engineer who can ship at the frontline — integrating directly with clients, deploying in production, and taking ownership — or just want to talk tech, I'd love to hear from you.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:jayeshcse18.22@gmail.com" class="btn-primary">Email Me</a>
+                        <a href="https://www.linkedin.com/in/jayesh-gupta-904347194/?skipRedirect=true" target="_blank" class="btn-secondary">LinkedIn Profile</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="#contact" class="btn-primary">✉ Hire Me</a>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-brand">
                     <a href="#home" class="logo">JG<span class="dot">.</span></a>
-                    <p>Bakani, Dist-Jhalawar, Rajasthan, 326022<br>India</p>
+                    <p class="tagline">Forward Deployed Engineer — building and shipping production systems at the frontline.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/jayesh-gupta-904347194/?skipRedirect=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗</a>
+                        <a href="https://github.com/jayesh-2210" target="_blank" rel="noopener noreferrer" aria-label="GitHub">💻</a>
+                        <a href="https://leetcode.com/jaigupta2210" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">🧩</a>
+                    </div>
                 </div>
-                <div class="footer-links" style="flex-direction: column; gap: 0.5rem;">
-                    <a href="mailto:jayeshcse18.22@gmail.com">jayeshcse18.22@gmail.com</a>
-                    <a href="tel:+917727086075">+91 7727086075</a>
-                    <a href="https://linkedin.com/in/jayeshgupta-904347194" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://leetcode.com/jaigupta2210" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:jayeshcse18.22@gmail.com">jayeshcse18.22@gmail.com</a>
+                        <a href="tel:+917727086075">📞 +91 7727086075</a>
+                        <a href="https://wa.me/917073066261">💬 +91 7073066261 (WhatsApp)</a>
+                        <a href="https://www.linkedin.com/in/jayesh-gupta-904347194/?skipRedirect=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Location</h4>
+                        <a href="#">Bengaluru, Karnataka</a>
+                        <a href="#">From: Bakani, Jhalawar, Rajasthan</a>
+                        <a href="#">Open to Remote</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
