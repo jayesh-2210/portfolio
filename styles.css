@@ -1063,6 +1063,83 @@ a {
   flex-wrap: wrap;
 }
 
+/* Online Presence */
+.online-presence {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border-glass);
+}
+
+.online-presence-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+}
+
+.presence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.presence-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  text-align: left;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.presence-card:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--accent-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(43, 163, 182, 0.18);
+}
+
+.presence-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.presence-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.presence-text strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.presence-text em {
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .presence-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ============================================
    STICKY CTA
    ============================================ */
